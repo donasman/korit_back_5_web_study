@@ -9,9 +9,9 @@ inputButton.onclick = () => {
    dataList.innerHTML += `
         <tr>
             <td>${num}</td>
-            <td>${inputData[0]}</td>
-            <td>${inputData[1]}</td>
-            <td>${inputData[2]}</td>
+            <td>${inputData[0].value}</td>
+            <td>${inputData[1].value}</td>
+            <td>${inputData[2].value}</td>
         </tr>
     `;
 

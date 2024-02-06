@@ -44,8 +44,9 @@ class User {
 let user = new User();
 user.setUsernameusername = "geonhui";
 console.log(user.username);
+
 let dataMap = new Map();
-dataMap.set("username", "gronhui")
-dataMap.set("password", "1234")
+dataMap.set("username", "gronhui");
+dataMap.set("password", "1234");
 console.log(dataMap);
 console.log(dataMap.get("password"));
