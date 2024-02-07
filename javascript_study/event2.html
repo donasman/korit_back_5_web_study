@@ -20,7 +20,7 @@
     <script>
         const textInputs = document.querySelectorAll(".text-inputs");
 
-        for(let i = 0; i < textInputs.length -1; i ++){
+        for(let i = 0; i < textInputs.length -1; i++){
             textInputs[i].onkeyup = (e) => {
                 if(e.keyCode === 13) {
                     textInputs[i + 1].focus();
