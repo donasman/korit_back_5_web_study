@@ -1,4 +1,4 @@
-function handleSubmitClick() {
+async function handleAddClick() { //이벤트 함수들은 비동기로 동작해도 됨
     const dataInputs = document.querySelectorAll(".data-inputs");
     const data = {
         name: dataInputs[0].value,
@@ -17,14 +17,32 @@ function handleSubmitClick() {
         body: jsonData
 
     };
+    try {
 
-    fetch ("http://localhost:8080/insert_and_select2/data/addition", option)
-    .then((response) => {
-        response.json() //프로미스
-        .then((json) => {
-            console.log(json)
-        });
-    });
+        const response = await fetch ("http://localhost:8080/insert_and_select2/data/addition", option)
+        
+        if(!response.ok) {
+            throw await response.json();
+        }
+
+        const json = response.json();
+
+        console.log(json);
+
+        console.log("test");
+
+ 
+    } catch(error) {
+        alert(error.errorMessage);
+    }
+
     
-    console.log("test");
+    // fetch ("http://localhost:8080/insert_and_select2/data/addition", option)
+    // .then((response) => {
+    //     response.json() //프로미스
+    //     .then((json) => {
+    //         console.log(json);
+    //         
+    //     });
+    // });
 }

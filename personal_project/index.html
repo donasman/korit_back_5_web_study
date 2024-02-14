@@ -7,14 +7,36 @@
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 </head>
 <body>
     <div class="root-layout">
         <div class="main-layout">
-            <div>
-                
-            </div>
+            <header>
+                <h1 class="main-title">TodoList</h1>
+                <p class="sub-title">TodoList</p>
+            </header>
+            <main>
+                <div class="main-content">
+                    <div class="list">
+                        <ul class="content-ul">
+                            <li><input type="date"></li>
+                            <li>수업 복습<input type="checkbox"></li>
+                            <li>개인 프로젝트<input type="checkbox"></li>
+                            <li>헬스<input type="checkbox"></li>
+                         </ul>
+                     </div>
+                    <div class="add-content">
+                        <input type="text" class="add-input-box">
+                        <button class="add-button" onclick="handleAddContent()">추가</button>
+                        <button class="remove-button">삭제</button>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
+    <script src="js/todo.js"></script>
 </body>
 </html>
