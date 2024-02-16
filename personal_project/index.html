@@ -16,22 +16,22 @@
         <div class="main-layout">
             <header>
                 <h1 class="main-title">TodoList</h1>
-                <p class="sub-title">TodoList</p>
+                <p class="sub-title">오늘 할 일</p>
             </header>
             <main>
                 <div class="main-content">
-                    <div class="list">
+                    <div class="list"><button class="save-button">저장</button>
+                        <input type="date" class="date-input">
                         <ul class="content-ul">
-                            <li><input type="date"></li>
-                            <li>수업 복습<input type="checkbox"></li>
-                            <li>개인 프로젝트<input type="checkbox"></li>
-                            <li>헬스<input type="checkbox"></li>
+                            <li value="수업 복습">수업 복습<input type="checkbox" class="isCheck"></li>
+                            <li value="개인 프로젝트">개인 프로젝트<input type="checkbox" class="isCheck"></li>
+                            <li value="헬스">헬스<input type="checkbox" class="isCheck"></li>
                          </ul>
                      </div>
                     <div class="add-content">
                         <input type="text" class="add-input-box">
                         <button class="add-button" onclick="handleAddContent()">추가</button>
-                        <button class="remove-button">삭제</button>
+                        <button class="remove-button" onclick="handleRemoveContent()">삭제</button>
                     </div>
                 </div>
             </main>

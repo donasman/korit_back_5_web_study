@@ -17,7 +17,7 @@ async function handleAddClick() {
 
     try {
 
-        const response = await fetch("http://localhost:8080/product/product", option)
+        const response = await fetch("http://localhost:8080/product_teacher/product12", option)
 
         if(!response.ok) {
             throw await response.json();

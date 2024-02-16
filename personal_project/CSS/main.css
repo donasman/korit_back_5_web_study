@@ -6,19 +6,27 @@ main {
 }
 
 .main-content {
-    height: 300px
+    height: 300px;
+    overflow: auto;
 }
+
 .list {
     margin: 10px;
+}
+
+.content-ul {
+    max-height: 300px;
 }
 
 li {
     padding-top: 10px;
 }
-
-
 .content {
     width: 230px;
+}
+.save-button {
+    position: absolute;
+    right: 10px;
 }
 
 .add-content{

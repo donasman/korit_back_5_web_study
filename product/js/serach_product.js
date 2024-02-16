@@ -1,6 +1,6 @@
 async function handleSearchClick() {
     try {
-        const response = await fetch("http://localhost:8080/product/products")
+        const response = await fetch("http://localhost:8080/product_teacher/products")
        
         const responseData = await response.json();
 
