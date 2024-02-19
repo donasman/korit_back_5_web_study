@@ -20,12 +20,12 @@
             </header>
             <main>
                 <div class="main-content">
-                    <div class="list"><button class="save-button">저장</button>
+                    <div class="list"><button class="save-button" onclick="handleSaveClick();">저장</button>
                         <input type="date" class="date-input">
                         <ul class="content-ul">
-                            <li value="수업 복습">수업 복습<input type="checkbox" class="isCheck"></li>
-                            <li value="개인 프로젝트">개인 프로젝트<input type="checkbox" class="isCheck"></li>
-                            <li value="헬스">헬스<input type="checkbox" class="isCheck"></li>
+                            <li value="수업 복습">수업 복습<input type="checkbox" class="input-content"></li>
+                            <li value="개인 프로젝트">개인 프로젝트<input type="checkbox" class="input-content"></li>
+                            <li value="헬스">헬스<input type="checkbox" class="input-content"></li>
                          </ul>
                      </div>
                     <div class="add-content">
@@ -38,5 +38,6 @@
         </div>
     </div>
     <script src="js/todo.js"></script>
+    <script src="js/insert_todolist.js"></script>
 </body>
 </html>

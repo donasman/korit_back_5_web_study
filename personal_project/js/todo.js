@@ -2,7 +2,7 @@ const addInputBox = document.querySelector(".add-input-box");
 const contentUl = document.querySelector(".content-ul");
 function handleAddContent() {
     const inputValue = addInputBox.value;
-    contentUl.innerHTML += `<li value="${inputValue}">${inputValue}<input type="checkbox"></li>`
+    contentUl.innerHTML += `<li value="${inputValue}">${inputValue}<input type="checkbox"><class="input-content"></li>`
     addInputBox.value = ``;
 }
 function handleRemoveContent() {
